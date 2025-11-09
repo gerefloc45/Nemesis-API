@@ -1,10 +1,10 @@
-package com.myname.aicore.api;
+package com.myname.nemesisapi.api;
 
 /**
  * Base interface for all AI behaviors.
  * Behaviors are executed within a BehaviorContext and return a status.
  * 
- * @author AI-Core Framework
+ * @author Nemesis-API Framework
  * @version 1.0.0
  */
 @FunctionalInterface

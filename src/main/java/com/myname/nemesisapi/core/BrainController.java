@@ -1,8 +1,8 @@
-package com.myname.aicore.core;
+package com.myname.nemesisapi.core;
 
-import com.myname.aicore.api.BehaviorContext;
-import com.myname.aicore.api.BehaviorTree;
-import com.myname.aicore.api.Blackboard;
+import com.myname.nemesisapi.api.BehaviorContext;
+import com.myname.nemesisapi.api.BehaviorTree;
+import com.myname.nemesisapi.api.Blackboard;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.server.world.ServerWorld;
 
@@ -14,7 +14,7 @@ import java.util.UUID;
  * Central controller for managing AI brains attached to entities.
  * Handles registration, updates, and cleanup of behavior trees.
  * 
- * @author AI-Core Framework
+ * @author Nemesis-API Framework
  * @version 1.0.0
  */
 public class BrainController {

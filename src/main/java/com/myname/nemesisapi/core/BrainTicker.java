@@ -1,4 +1,4 @@
-package com.myname.aicore.core;
+package com.myname.nemesisapi.core;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.entity.LivingEntity;
@@ -11,7 +11,7 @@ import java.util.List;
  * Handles automatic ticking of all registered brains on server tick.
  * Integrates with Fabric's server tick event system.
  * 
- * @author AI-Core Framework
+ * @author Nemesis-API Framework
  * @version 1.0.0
  */
 public class BrainTicker {

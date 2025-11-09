@@ -1,4 +1,4 @@
-package com.myname.aicore.api;
+package com.myname.nemesisapi.api;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.server.world.ServerWorld;
@@ -7,7 +7,7 @@ import net.minecraft.server.world.ServerWorld;
  * Context object passed to behaviors during execution.
  * Contains the entity, world, blackboard, and delta time information.
  * 
- * @author AI-Core Framework
+ * @author Nemesis-API Framework
  * @version 1.0.0
  */
 public class BehaviorContext {

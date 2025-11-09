@@ -1,12 +1,12 @@
-package com.myname.aicore.api.perception;
+package com.myname.nemesisapi.api.perception;
 
-import com.myname.aicore.api.BehaviorContext;
+import com.myname.nemesisapi.api.BehaviorContext;
 
 /**
  * Base interface for all sensors.
  * Sensors detect and process information about the environment.
  * 
- * @author AI-Core Framework
+ * @author Nemesis-API Framework
  * @version 1.1.0
  */
 public interface Sensor {

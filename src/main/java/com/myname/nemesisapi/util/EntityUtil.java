@@ -1,4 +1,4 @@
-package com.myname.aicore.util;
+package com.myname.nemesisapi.util;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -13,7 +13,7 @@ import java.util.Optional;
  * Utility class for common entity operations in AI behaviors.
  * Provides helper methods for entity queries and spatial operations.
  * 
- * @author AI-Core Framework
+ * @author Nemesis-API Framework
  * @version 1.0.0
  */
 public class EntityUtil {

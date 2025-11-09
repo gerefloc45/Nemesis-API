@@ -1,6 +1,6 @@
-package com.myname.aicore.api.perception;
+package com.myname.nemesisapi.api.perception;
 
-import com.myname.aicore.api.BehaviorContext;
+import com.myname.nemesisapi.api.BehaviorContext;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
  * Manages multiple sensors for an entity.
  * Handles sensor updates and lifecycle.
  * 
- * @author AI-Core Framework
+ * @author Nemesis-API Framework
  * @version 1.1.0
  */
 public class SensorManager {

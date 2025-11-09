@@ -1,4 +1,4 @@
-package com.myname.aicore.api;
+package com.myname.nemesisapi.api;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,7 +8,7 @@ import java.util.Optional;
  * Blackboard memory system for storing and retrieving arbitrary data per entity.
  * Thread-safe implementation for concurrent access.
  * 
- * @author AI-Core Framework
+ * @author Nemesis-API Framework
  * @version 1.0.0
  */
 public class Blackboard {

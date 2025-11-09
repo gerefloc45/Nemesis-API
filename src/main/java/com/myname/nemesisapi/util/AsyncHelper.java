@@ -1,4 +1,4 @@
-package com.myname.aicore.util;
+package com.myname.nemesisapi.util;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
@@ -9,14 +9,14 @@ import java.util.function.Supplier;
  * Utility class for running asynchronous AI operations.
  * Provides thread pool management and CompletableFuture helpers.
  * 
- * @author AI-Core Framework
+ * @author Nemesis-API Framework
  * @version 1.0.0
  */
 public class AsyncHelper {
     private static final ExecutorService EXECUTOR = Executors.newFixedThreadPool(
         Math.max(2, Runtime.getRuntime().availableProcessors() / 2),
         r -> {
-            Thread thread = new Thread(r, "AI-Core-Async");
+            Thread thread = new Thread(r, "Nemesis-API-Async");
             thread.setDaemon(true);
             return thread;
         }

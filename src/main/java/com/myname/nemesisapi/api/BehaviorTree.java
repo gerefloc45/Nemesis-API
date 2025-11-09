@@ -1,10 +1,10 @@
-package com.myname.aicore.api;
+package com.myname.nemesisapi.api;
 
 /**
  * Main behavior tree class that wraps a root behavior.
  * Manages the execution lifecycle of the entire tree.
  * 
- * @author AI-Core Framework
+ * @author Nemesis-API Framework
  * @version 1.0.0
  */
 public class BehaviorTree {

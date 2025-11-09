@@ -1,8 +1,8 @@
-package com.myname.aicore.api.nodes;
+package com.myname.nemesisapi.api.nodes;
 
-import com.myname.aicore.api.Behavior;
-import com.myname.aicore.api.BehaviorContext;
-import com.myname.aicore.api.BehaviorNode;
+import com.myname.nemesisapi.api.Behavior;
+import com.myname.nemesisapi.api.BehaviorContext;
+import com.myname.nemesisapi.api.BehaviorNode;
 
 /**
  * Sequence node (AND logic) - executes children until one fails.
@@ -10,7 +10,7 @@ import com.myname.aicore.api.BehaviorNode;
  * Returns FAILURE if any child fails.
  * Returns RUNNING if current child is running.
  * 
- * @author AI-Core Framework
+ * @author Nemesis-API Framework
  * @version 1.0.0
  */
 public class SequenceNode extends BehaviorNode {

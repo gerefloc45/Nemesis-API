@@ -1,7 +1,7 @@
-package com.myname.aicore.api.perception;
+package com.myname.nemesisapi.api.perception;
 
-import com.myname.aicore.api.BehaviorContext;
-import com.myname.aicore.util.EntityUtil;
+import com.myname.nemesisapi.api.BehaviorContext;
+import com.myname.nemesisapi.util.EntityUtil;
 import net.minecraft.entity.LivingEntity;
 
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import java.util.function.Predicate;
  * Sensor for detecting nearby entities.
  * Supports filtering by type and custom predicates.
  * 
- * @author AI-Core Framework
+ * @author Nemesis-API Framework
  * @version 1.1.0
  */
 public class EntitySensor<T extends LivingEntity> implements Sensor {

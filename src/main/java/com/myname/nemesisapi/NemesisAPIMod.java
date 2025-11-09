@@ -1,22 +1,22 @@
-package com.myname.aicore;
+package com.myname.nemesisapi;
 
-import com.myname.aicore.core.BrainTicker;
-import com.myname.aicore.util.AsyncHelper;
+import com.myname.nemesisapi.core.BrainTicker;
+import com.myname.nemesisapi.util.AsyncHelper;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Main entrypoint for the AI-Core framework mod.
+ * Main entrypoint for the Nemesis-API framework mod.
  * This mod provides a complete AI framework for Minecraft entities.
  * It contains no gameplay content and is designed to be used as a library.
  * 
- * @author AI-Core Framework
- * @version 1.0.0
+ * @author Nemesis-API Framework
+ * @version 0.1.0
  */
-public class AICoreMod implements ModInitializer {
-    public static final String MOD_ID = "aicore";
-    public static final String MOD_NAME = "AI-Core";
+public class NemesisAPIMod implements ModInitializer {
+    public static final String MOD_ID = "nemesisapi";
+    public static final String MOD_NAME = "Nemesis-API";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_NAME);
 
     @Override

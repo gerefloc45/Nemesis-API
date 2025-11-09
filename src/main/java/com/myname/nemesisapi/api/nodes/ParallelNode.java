@@ -1,8 +1,8 @@
-package com.myname.aicore.api.nodes;
+package com.myname.nemesisapi.api.nodes;
 
-import com.myname.aicore.api.Behavior;
-import com.myname.aicore.api.BehaviorContext;
-import com.myname.aicore.api.BehaviorNode;
+import com.myname.nemesisapi.api.Behavior;
+import com.myname.nemesisapi.api.BehaviorContext;
+import com.myname.nemesisapi.api.BehaviorNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.List;
  * Parallel node - executes all children simultaneously.
  * Success policy determines when the node succeeds.
  * 
- * @author AI-Core Framework
+ * @author Nemesis-API Framework
  * @version 1.1.0
  */
 public class ParallelNode extends BehaviorNode {

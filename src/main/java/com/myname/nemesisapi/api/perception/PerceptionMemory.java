@@ -1,4 +1,4 @@
-package com.myname.aicore.api.perception;
+package com.myname.nemesisapi.api.perception;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.Vec3d;
@@ -9,7 +9,7 @@ import java.util.*;
  * Memory system for storing perceived entities and their information.
  * Entities are remembered even after they leave sensor range.
  * 
- * @author AI-Core Framework
+ * @author Nemesis-API Framework
  * @version 1.1.0
  */
 public class PerceptionMemory {

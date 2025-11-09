@@ -1,4 +1,4 @@
-package com.myname.aicore.api;
+package com.myname.nemesisapi.api;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.List;
  * Abstract base class for composite behavior tree nodes.
  * Nodes can have children and implement different execution strategies.
  * 
- * @author AI-Core Framework
+ * @author Nemesis-API Framework
  * @version 1.0.0
  */
 public abstract class BehaviorNode implements Behavior {
