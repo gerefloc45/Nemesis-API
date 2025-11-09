@@ -56,33 +56,36 @@
 
 ---
 
-## 🚧 In Progress (v0.2.0)
+## ✅ Completed (v0.2.0)
 
 ### Enhanced Behavior Nodes
-- 🔄 **TimeoutNode** - Fail behavior after timeout
-- 🔄 **RetryNode** - Retry failed behaviors with backoff
-- 🔄 **RandomSelectorNode** - Random child selection
-- 🔄 **WeightedSelectorNode** - Weighted random selection
-- 🔄 **UntilSuccessNode** - Repeat until success
-- 🔄 **UntilFailureNode** - Repeat until failure
+- ✅ **TimeoutNode** - Fail behavior after timeout
+- ✅ **RetryNode** - Retry failed behaviors with exponential backoff
+- ✅ **RandomSelectorNode** - Random child selection
+- ✅ **WeightedSelectorNode** - Weighted random selection with probabilities
+- ✅ **UntilSuccessNode** - Repeat until success
+- ✅ **UntilFailureNode** - Repeat until failure
 
 ### Pathfinding Integration
-- 🔄 **PathfindingBehavior** - Navigate to target positions
-- 🔄 **FollowEntityBehavior** - Follow moving entities
-- 🔄 **PatrolBehavior** - Patrol waypoint lists
-- 🔄 **FleeFromEntityBehavior** - Escape from threats
-- 🔄 **WanderBehavior** - Random exploration
+- ✅ **PathfindingBehavior** - Navigate to target positions with Minecraft pathfinding
+- ✅ **FollowEntityBehavior** - Follow moving entities at configurable distance
+- ✅ **PatrolBehavior** - Patrol waypoint lists with loop/reverse modes
+- ✅ **FleeFromEntityBehavior** - Escape from threats with smart positioning
+- ✅ **WanderBehavior** - Random exploration with area constraints
 
 ### Animation Support
-- 🔄 **AnimationNode** - Trigger entity animations
-- 🔄 **AnimationController** - Animation state management
-- 🔄 **GeckoLib integration** - Optional GeckoLib support
+- ✅ **AnimationNode** - Trigger entity animations with timing control
+- ✅ **AnimationController** - Animation state management and provider system
+- ✅ **GeckoLib integration** - Optional GeckoLib support via reflection
+- ✅ **AnimationHelper** - Convenience methods for animation control
 
 ### Debugging Tools
-- 🔄 **BehaviorTreeDebugger** - Visual tree debugging
-- 🔄 **BlackboardInspector** - Runtime memory inspection
-- 🔄 **Performance Profiler** - Identify bottlenecks
-- 🔄 **Logging System** - Detailed behavior execution logs
+- ✅ **BehaviorTreeDebugger** - Visual tree debugging with execution history
+- ✅ **BlackboardInspector** - Runtime memory inspection and change tracking
+- ✅ **PerformanceProfiler** - Identify bottlenecks with detailed metrics
+- ✅ **AILogger** - Advanced logging system with categories and file output
+
+## 🚧 In Progress (v0.3.0)
 
 ---
 
@@ -212,7 +215,7 @@
 | Version | Release Date | Features |
 |---------|-------------|----------|
 | v0.1.0-beta | 2025-11 | Core framework, behavior trees, perception, utility AI |
-| v0.2.0 | TBA | Enhanced nodes, pathfinding, debugging |
+| v0.2.0 | 2025-11 | Enhanced nodes, pathfinding, animations, debugging tools |
 | v0.3.0 | TBA | State machines, FSM |
 | v0.4.0 | TBA | Machine learning |
 | v0.5.0 | TBA | Multiplayer & networking |

@@ -1,5 +1,6 @@
 package com.gerefloc45.voidapi;
 
+import com.gerefloc45.voidapi.api.animation.AnimationHelper;
 import com.gerefloc45.voidapi.core.BrainTicker;
 import com.gerefloc45.voidapi.util.AsyncHelper;
 import net.fabricmc.api.ModInitializer;
@@ -12,7 +13,7 @@ import org.slf4j.LoggerFactory;
  * It contains no gameplay content and is designed to be used as a library.
  * 
  * @author VoidAPI Framework
- * @version 0.1.0
+ * @version 0.2.0
  */
 public class VoidAPIMod implements ModInitializer {
     public static final String MOD_ID = "voidapi";
@@ -21,10 +22,13 @@ public class VoidAPIMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        LOGGER.info("Initializing {} Framework", MOD_NAME);
+        LOGGER.info("Initializing {} Framework v0.2.0", MOD_NAME);
 
         // Initialize the brain ticker system
         BrainTicker.initialize();
+
+        // Initialize animation system
+        AnimationHelper.initialize();
 
         LOGGER.info("{} Framework initialized successfully", MOD_NAME);
         LOGGER.info("API ready for use by dependent mods");
