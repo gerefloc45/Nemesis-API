@@ -1,442 +1,264 @@
-# Nemesis-API Framework - Roadmap & Future Implementations
+# VoidAPI Development Roadmap
 
-## 📊 Status Attuale
-- ✅ **v0.1.0-beta** - Core framework completato e funzionante
-- ✅ Behavior Tree base (Selector, Sequence, Action)
-- ✅ Blackboard memory system
-- ✅ Brain controller & auto-ticker
-- ✅ Async utilities
-- ✅ Entity utilities base
-- ✅ 5 Nodi avanzati (Parallel, Inverter, Repeat, Conditional, Cooldown)
-- ✅ Sistema percezione completo (Sensors, Memory, Manager)
+## Current Version: v0.1.0-beta
+
+**Status:** Active Development  
+**Target:** Minecraft 1.21.1 Fabric
 
 ---
 
-## ✅ Implementazioni Completate
+## ✅ Completed (v0.1.0-beta)
 
-### v0.1.0-beta (Novembre 2025)
+### Core Framework
+- ✅ Behavior Tree System
+  - Basic node types (Selector, Sequence, Action)
+  - Behavior execution and status handling
+  - Tree lifecycle management
+- ✅ Blackboard Memory System
+  - Type-safe data storage
+  - Get/Set/Has/Remove operations
+  - Per-entity memory isolation
+- ✅ Brain Controller
+  - Entity-to-tree attachment
+  - Centralized brain management
+  - Brain ticking system
+- ✅ Brain Ticker
+  - Automatic server tick integration
+  - Entity registration/unregistration
+  - Fabric event integration
 
-#### Core Framework
-- ✅ **BehaviorTree** - Sistema completo di behavior tree
-- ✅ **BehaviorNode** - Base astratta per tutti i nodi
-- ✅ **Blackboard** - Sistema di memoria condivisa thread-safe
-- ✅ **BrainController** - Gestione centralizzata AI
-- ✅ **BrainTicker** - Sistema di aggiornamento automatico
-- ✅ **AsyncHelper** - Utilità per operazioni asincrone
-- ✅ **EntityUtil** - Utilità per entità
+### Advanced Nodes
+- ✅ ParallelNode - Execute multiple behaviors simultaneously
+- ✅ RepeatNode - Loop behaviors with iteration limits
+- ✅ CooldownNode - Time-based execution throttling
+- ✅ ConditionalNode - Conditional behavior execution
+- ✅ InverterNode - Result inversion
 
-#### Nodi Base
-- ✅ **SelectorNode** - Esegue children fino al primo SUCCESS
-- ✅ **SequenceNode** - Esegue children fino al primo FAILURE
-- ✅ **ActionNode** - Nodo foglia per azioni concrete
+### Perception System
+- ✅ Sensor API - Base interface for all sensors
+- ✅ EntitySensor - Detect and filter nearby entities
+- ✅ BlockSensor - Detect specific blocks in range
+- ✅ SoundSensor - React to sound events
+- ✅ PerceptionMemory - Remember entities after detection
+- ✅ SensorManager - Multi-sensor coordination
 
-#### Nodi Avanzati (5 implementati)
-- ✅ **ParallelNode** - Esecuzione parallela con modalità RequireAll/RequireOne
-- ✅ **InverterNode** - Inversione risultato SUCCESS↔FAILURE
-- ✅ **RepeatNode** - Ripetizione con limite o infinita
-- ✅ **ConditionalNode** - Esecuzione condizionale basata su Predicate
-- ✅ **CooldownNode** - Gestione cooldown tra esecuzioni
+### Utility AI
+- ✅ UtilitySelector - Score-based behavior selection
+- ✅ Scorer - Utility score calculation
+- ✅ Consideration - Multi-factor scoring
+- ✅ ResponseCurve - Value transformation curves
+- ✅ DynamicPrioritySelector - Priority-based selection
 
-#### Sistema Percezione Completo
-- ✅ **Sensor** - Interfaccia base per sensori
-- ✅ **EntitySensor** - Rilevamento entità con filtri avanzati
-- ✅ **PerceptionMemory** - Sistema memoria per entità rilevate
-- ✅ **SensorManager** - Gestione multipli sensori per entità
-- ✅ **BlockSensor** - Rilevamento blocchi con pattern scanning
-- ✅ **SoundSensor** - Rilevamento eventi sonori con memoria temporale
-
-#### Statistiche v0.1.0-beta
-- 📦 **24 classi Java** implementate
-- 🎯 **9 nodi behavior tree** disponibili
-- 👁️ **6 classi perception** complete (4 sensori)
-- 📚 **Documentazione completa** con esempi
-- ⚡ **Performance ottimizzate** per 100+ entità
-
----
-
-## ✅ v0.2.0-beta Completata
-
-### Utility AI System (Novembre 2025)
-
-#### Core Components
-- ✅ **Scorer** - Interface funzionale per valutazione behaviors
-- ✅ **Consideration** - Valutatore singola variabile con normalizzazione
-- ✅ **ResponseCurve** - 13+ curve predefinite + custom
-- ✅ **UtilitySelector** - Nodo che sceglie behavior migliore
-- ✅ **DynamicPrioritySelector** - Priorità dinamiche runtime
-
-#### Features Avanzate
-- ✅ Combinatori per Scorer (add, multiply, scale, etc.)
-- ✅ Curve combinabili e componibili
-- ✅ Builder pattern per configurazione facile
-- ✅ Debug support con score tracking
-- ✅ Re-evaluation configurabile
-
-#### Statistiche v0.2.0-beta
-- 📦 **29 classi Java** totali (+5)
-- 🎯 **11 nodi behavior tree** disponibili (+2)
-- 🧮 **13+ response curves** predefinite
-- 📚 **3 esempi completi** (Combat, Resource, Tasks)
-- ⚡ **Ottimizzazioni** per decision-making efficiente
+### Utilities
+- ✅ AsyncHelper - Thread pool management
+- ✅ EntityUtil - Entity helper methods
+- ✅ CompletableFuture integration
 
 ---
 
-## 🚀 Implementazioni Pianificate
+## 🚧 In Progress (v0.2.0)
 
-### Phase 1: Nodi Avanzati + Sensori ✅ COMPLETATO AL 100%
-**Priorità**: ALTA  
-**Completato**: 2025-11-09  
-**Versione**: v0.1.0-beta
+### Enhanced Behavior Nodes
+- 🔄 **TimeoutNode** - Fail behavior after timeout
+- 🔄 **RetryNode** - Retry failed behaviors with backoff
+- 🔄 **RandomSelectorNode** - Random child selection
+- 🔄 **WeightedSelectorNode** - Weighted random selection
+- 🔄 **UntilSuccessNode** - Repeat until success
+- 🔄 **UntilFailureNode** - Repeat until failure
 
-**🎉 Phase 1 Completata con Successo!**
-- Tutti i 5 nodi avanzati implementati e testati
-- Sistema percezione completo con 4 sensori differenti
-- Tutti gli esempi e documentazione completata
-- Nessun punto rimasto in sospeso
+### Pathfinding Integration
+- 🔄 **PathfindingBehavior** - Navigate to target positions
+- 🔄 **FollowEntityBehavior** - Follow moving entities
+- 🔄 **PatrolBehavior** - Patrol waypoint lists
+- 🔄 **FleeFromEntityBehavior** - Escape from threats
+- 🔄 **WanderBehavior** - Random exploration
 
-#### Nodi Behavior Tree Avanzati
-- [x] **ParallelNode** - Esegue più behavior contemporaneamente
-  - Modalità: RequireAll, RequireOne
-  - Gestione fallimenti paralleli
-  
-- [x] **DecoratorNode** - Base per decoratori *(implementato via nodi specifici)*
-  - Modifica comportamento child
-  - Lifecycle management
-  
-- [x] **InverterNode** - Inverte SUCCESS/FAILURE
-  - Utile per condizioni negative
-  
-- [x] **RepeatNode** - Ripete behavior N volte o infinitamente
-  - Repeat until failure
-  - Repeat N times
-  - Infinite repeat con break condition
-  
-- [x] **ConditionalNode** - Esegue solo se condizione vera
-  - Lambda condition support
-  - Blackboard condition checks
-  
-- [x] **CooldownNode** - Aggiunge cooldown tra esecuzioni
-  - Tempo configurabile
-  - Blackboard-based tracking
+### Animation Support
+- 🔄 **AnimationNode** - Trigger entity animations
+- 🔄 **AnimationController** - Animation state management
+- 🔄 **GeckoLib integration** - Optional GeckoLib support
 
-#### Sistema di Sensori (Perception)
-- [x] **Sensor API** - Interfaccia base per sensori
-  - Update frequency configurabile
-  - Range detection
-  
-- [x] **EntitySensor** - Rileva entità vicine
-  - Filtri per tipo entità
-  - Line of sight check
-  - Memory persistence
-  
-- [x] **BlockSensor** - Rileva blocchi specifici
-  - Pattern matching (FULL_SPHERE, HORIZONTAL_PLANE, CARDINAL_DIRECTIONS, FORWARD_CONE)
-  - Area scanning ottimizzata
-  - Builder pattern per configurazione
-  
-- [x] **SoundSensor** - Rileva suoni/eventi
-  - Event-based detection
-  - Memoria temporale configurabile
-  - Filtraggio per tipo suono
-  
-- [x] **MemorySystem** - Ricorda entità viste
-  - Decay time configurabile
-  - Last known position
-  - Threat level tracking (PerceptionMemory implementato)
-
-#### Esempi Pratici
-- [x] Esempi base disponibili in documentazione
-- [x] Pattern AI con sensori e nodi avanzati
-- [x] Esempi di utilizzo sensori (EntitySensor, BlockSensor, SoundSensor)
+### Debugging Tools
+- 🔄 **BehaviorTreeDebugger** - Visual tree debugging
+- 🔄 **BlackboardInspector** - Runtime memory inspection
+- 🔄 **Performance Profiler** - Identify bottlenecks
+- 🔄 **Logging System** - Detailed behavior execution logs
 
 ---
 
-### Phase 2: Utility AI System ✅ COMPLETATO
-**Priorità**: MEDIA  
-**Completato**: 2025-11-09  
-**Versione**: v0.2.0
+## 📋 Planned Features
 
-#### Core Utility System
-- [x] **Scorer Interface** - Sistema di punteggio per behaviors
-  - Combinatori (add, multiply, scale, clamp, invert)
-  - Scorer costanti e funzionali
-  
-- [x] **Consideration** - Valutazione singola variabile
-  - Normalizzazione automatica input
-  - Builder pattern per configurazione
-  - Integrazione con ResponseCurve
-  
-- [x] **ResponseCurve** - Curve di valutazione
-  - Linear, Quadratic, Cubic
-  - Exponential con slope configurabile
-  - Logistic (S-curve) con steepness
-  - Step, SmoothStep, Power, Sine
-  - Combinatori (invert, scale, offset, clamp, chain)
-  
-- [x] **UtilitySelector** - Seleziona behavior con score più alto
-  - Re-evaluation interval configurabile
-  - Cambio dinamico behavior
-  - Debug con score tracking
-  
-- [x] **DynamicPrioritySelector** - Priorità che cambiano runtime
-  - Riordino automatico children
-  - Integrazione con Scorer
-  - Priority tracking per debug
+### v0.3.0 - State Machines
+**ETA:** Q1 2026
 
-#### Esempi Completi
-- [x] Combat AI con utility scoring (attack/flee/cover)
-- [x] Resource gathering AI con inventory tracking
-- [x] Task Manager AI con dynamic priorities
-- [x] Guida completa curve di risposta
-- [x] Best practices e performance tips
+- **Finite State Machine (FSM)** - Traditional state-based AI
+- **Hierarchical FSM** - Nested state machines
+- **FSM-Behavior Tree hybrid** - Best of both worlds
+- **State transitions** - Condition-based state switching
+- **State persistence** - Save/load state data
 
----
+### v0.3.5 - Goal-Oriented Action Planning (GOAP)
+**ETA:** Q2 2026
 
-### Phase 3: Goal-Oriented Action Planning (GOAP)
-**Priorità**: MEDIA  
-**Tempo Stimato**: 60-90 minuti  
-**Versione Target**: v0.3.0
+- **Goal system** - Define entity goals
+- **Action planner** - Dynamic action sequencing
+- **Precondition checking** - Action prerequisites
+- **Cost-based planning** - Optimal plan selection
+- **Dynamic replanning** - Adapt to changing conditions
 
-#### GOAP Core
-- [ ] **Goal System** - Definizione obiettivi
-  - Priority-based goals
-  - Goal conditions
-  
-- [ ] **WorldState** - Rappresentazione stato mondo
-  - Key-value state
-  - State comparison
-  
-- [ ] **Action** - Azioni atomiche
-  - Preconditions
-  - Effects
-  - Cost
-  
-- [ ] **Planner** - A* based planning
-  - Path finding tra stati
-  - Cost optimization
-  - Plan caching
+### v0.4.0 - Machine Learning Integration
+**ETA:** Q3 2026
 
-#### Esempi
-- [ ] Survival AI (trova cibo, rifugio, difesa)
-- [ ] Builder AI (raccoglie risorse, costruisce)
-- [ ] Trader AI (cerca oggetti, commercia)
+- **Behavior Learning** - Learn from player interactions
+- **Pattern Recognition** - Detect player behavior patterns
+- **Adaptive AI** - Adjust difficulty dynamically
+- **Neural Network integration** - Optional ML backends
+- **Training mode** - Supervised learning support
+
+### v0.5.0 - Multiplayer & Networking
+**ETA:** Q4 2026
+
+- **Synchronized AI** - Client-side prediction
+- **AI sharing** - Share AI between players
+- **Network optimization** - Reduce bandwidth usage
+- **Spectator mode** - Watch AI decisions live
+- **Remote debugging** - Debug AI over network
+
+### v0.6.0 - Advanced Perception
+**ETA:** Q1 2027
+
+- **Vision cones** - Realistic field of view
+- **Line-of-sight** - Occlusion detection
+- **Smell sensor** - Track by scent
+- **Touch sensor** - React to physical contact
+- **Memory degradation** - Forget over time
+- **Attention system** - Focus on important stimuli
+
+### v0.7.0 - Social AI
+**ETA:** Q2 2027
+
+- **Faction system** - Friend/foe relationships
+- **Reputation tracking** - Remember player actions
+- **Communication** - Entity-to-entity messaging
+- **Cooperation behaviors** - Teamwork and coordination
+- **Leadership system** - Follow/command hierarchies
+- **Emotion system** - Mood-based behavior changes
+
+### v0.8.0 - Optimization & Performance
+**ETA:** Q3 2027
+
+- **LOD AI** - Simplified AI at distance
+- **Budget system** - CPU time management
+- **Caching system** - Reuse calculations
+- **Parallel processing** - Multi-threaded AI
+- **Incremental updates** - Spread work over frames
+- **Memory pooling** - Reduce allocations
 
 ---
 
-### Phase 4: Debug & Visualization Tools
-**Priorità**: ALTA (per sviluppo)  
-**Tempo Stimato**: 45-60 minuti  
-**Versione Target**: v0.4.0
+## 🎯 Long-term Vision
 
-#### Debug Tools
-- [ ] **TreeVisualizer** - Visualizza behavior tree in esecuzione
-  - Real-time node status
-  - Execution path highlighting
-  - Web-based UI o in-game overlay
-  
-- [ ] **PerformanceProfiler** - Misura performance
-  - Tempo esecuzione per nodo
-  - Memory usage tracking
-  - Bottleneck detection
-  
-- [ ] **BlackboardInspector** - Ispeziona blackboard runtime
-  - Live value monitoring
-  - History tracking
-  - Value editing (debug mode)
-  
-- [ ] **AIDebugCommands** - Comandi in-game
-  - `/nemesisapi debug <entity>` - Mostra AI info
-  - `/nemesisapi tree <entity>` - Visualizza tree
-  - `/nemesisapi blackboard <entity>` - Mostra memoria
-  - `/nemesisapi profile <entity>` - Performance stats
+### Modding Ecosystem
+- **AI Marketplace** - Share custom behaviors
+- **Behavior libraries** - Reusable AI components
+- **Templates** - Pre-made AI configurations
+- **Documentation portal** - Interactive guides
+- **Community examples** - User-contributed AIs
 
-#### Logging System
-- [ ] Structured logging per AI events
-- [ ] Log levels configurabili
-- [ ] File output per analisi
+### Platform Support
+- **Forge compatibility** - Multi-loader support
+- **Quilt support** - Modern loader integration
+- **Sponge support** - Server-side AI
+- **Datapack integration** - JSON-based AI configs
+- **Command interface** - Control AI via commands
+
+### Developer Tools
+- **Visual editor** - Drag-and-drop tree creation
+- **Live reloading** - Hot-swap behaviors
+- **Unit testing** - Automated AI testing
+- **Benchmarking suite** - Performance testing
+- **CI/CD integration** - Automated builds
+
+### Advanced Features
+- **Procedural generation** - Generate AI dynamically
+- **Story system** - Quest and narrative AI
+- **Economy AI** - Trading and resource management
+- **Builder AI** - Construction behaviors
+- **Combat system** - Advanced combat mechanics
 
 ---
 
-### Phase 5: Pathfinding Integration
-**Priorità**: MEDIA  
-**Tempo Stimato**: 50-70 minuti  
-**Versione Target**: v0.5.0
+## 🔬 Research & Experiments
 
-#### Pathfinding Core
-- [ ] **PathfinderAPI** - Integrazione con Minecraft pathfinding
-- [ ] **A* Implementation** - Custom A* per casi speciali
-- [ ] **DynamicObstacles** - Evita ostacoli dinamici
-- [ ] **MovementCapabilities** - Jump, swim, climb support
-- [ ] **PathSmoothing** - Percorsi più naturali
-- [ ] **PathCache** - Cache percorsi calcolati
+### Under Investigation
+- **Quantum computing** - Explore quantum algorithms
+- **Swarm intelligence** - Collective behaviors
+- **Evolutionary algorithms** - Genetic AI programming
+- **Fuzzy logic** - Handle uncertainty
+- **Bayesian networks** - Probabilistic reasoning
+- **Reinforcement learning** - Reward-based learning
 
-#### Advanced Features
-- [ ] **FormationMovement** - Movimento in formazione
-- [ ] **FlockingBehavior** - Comportamento gregge
-- [ ] **CoverSystem** - Trova coperture in combattimento
-
----
-
-### Phase 6: Advanced AI Patterns
-**Priorità**: BASSA  
-**Tempo Stimato**: Variabile  
-**Versione Target**: v1.0.0 (Stable)
-
-#### Patterns Avanzati
-- [ ] **State Machine Integration** - FSM + Behavior Trees
-- [ ] **Hierarchical Task Network (HTN)** - Planning gerarchico
-- [ ] **Behavior Fusion** - Combina multiple AI
-- [ ] **Learning System** - AI che impara (basic ML)
-- [ ] **Emotion System** - Stati emotivi che influenzano AI
-- [ ] **Social AI** - Interazioni tra entità
-- [ ] **Squad AI** - Coordinazione gruppi
+### Proof of Concepts
+- **Voice commands** - Control AI with voice
+- **Gesture recognition** - React to player movements
+- **Emotional intelligence** - Understand player emotions
+- **Natural language** - Understand text commands
+- **Computer vision** - Recognize player actions
 
 ---
 
-### Phase 7: Performance & Optimization
-**Priorità**: ALTA (long-term)  
-**Tempo Stimato**: Continuo  
-**Versione Target**: Ongoing
+## 📊 Version History
 
-#### Ottimizzazioni
-- [ ] **Behavior Pooling** - Riuso oggetti behavior
-- [ ] **Lazy Evaluation** - Valuta solo quando necessario
-- [ ] **LOD System** - Level of Detail per AI distanti
-- [ ] **Multithreading** - Parallel AI updates
-- [ ] **Spatial Partitioning** - Ottimizza query spaziali
-- [ ] **Incremental Planning** - Planning distribuito su più tick
+| Version | Release Date | Features |
+|---------|-------------|----------|
+| v0.1.0-beta | 2025-11 | Core framework, behavior trees, perception, utility AI |
+| v0.2.0 | TBA | Enhanced nodes, pathfinding, debugging |
+| v0.3.0 | TBA | State machines, FSM |
+| v0.4.0 | TBA | Machine learning |
+| v0.5.0 | TBA | Multiplayer & networking |
+| v1.0.0 | TBA | Stable release |
 
 ---
 
-### Phase 8: Integration & Ecosystem
-**Priorità**: MEDIA  
-**Tempo Stimato**: Variabile  
-**Versione Target**: v1.x (Post-Stable)
+## 🤝 Contributing
 
-#### Integrazioni
-- [ ] **Datapack Support** - Definisci AI via datapack
-- [ ] **JSON Configuration** - AI configurabili via JSON
-- [ ] **Mod Compatibility** - Integration con altri mod popolari
-- [ ] **API Extensions** - Plugin system per estendere framework
-- [ ] **Preset Library** - Libreria AI pre-fatte riusabili
+Vogliamo il tuo feedback! Se hai idee per nuove feature o miglioramenti:
+
+1. **Apri una Issue** su GitHub
+2. **Discuti** nella community Discord
+3. **Contribuisci** con Pull Requests
+4. **Condividi** i tuoi use cases
 
 ---
 
-## 📈 Metriche di Successo
+## 📝 Priority System
 
-### Performance Targets
-- ⚡ < 0.5ms per brain tick (media)
-- 🧠 Supporto 100+ entità con AI simultanee
-- 💾 < 1KB memoria per brain instance
-- 🔄 60 TPS stabili con 50+ AI attive
-
-### Developer Experience
-- 📚 100% API documentation coverage
-- 🎯 < 10 linee codice per AI semplice
-- 🛠️ Debug tools completi
-- 📖 Esempi per ogni feature
-
-### Ecosystem
-- 🔌 5+ mod che usano Nemesis-API
-- 👥 Community contributions
-- 📦 Preset library con 20+ AI templates
+- 🔥 **High Priority** - Essential features
+- ⭐ **Medium Priority** - Important improvements
+- 💡 **Low Priority** - Nice to have
+- 🔬 **Research** - Experimental ideas
 
 ---
 
-## 🗓️ Timeline
+## ⚠️ Breaking Changes
 
-### Completate
-- ✅ **v0.1.0-beta** (Core + Nodi + Sensori): Completato Nov 2025
+Seguiamo il **Semantic Versioning**:
+- **Major** (X.0.0) - Breaking API changes
+- **Minor** (0.X.0) - New features, backward compatible
+- **Patch** (0.0.X) - Bug fixes only
 
-### In Pianificazione
-- **v0.2.0** (Utility AI): ~1 settimana
-- **v0.3.0** (GOAP): ~2 settimane
-- **v0.4.0** (Debug Tools): ~1 settimana
-- **v0.5.0** (Pathfinding): ~2 settimane
-- **v1.0.0** (Stable Release): ~1 mese
-- **v2.0.0** (Advanced Features): ~2-3 mesi
-
-**Tempo Stimato Rimanente**: ~2-3 mesi per v1.0.0 stable
+Durante la **beta** (v0.x.x), le API possono cambiare tra versioni minor.
 
 ---
 
-## 💡 Idee Future (Brainstorming)
+## 📞 Feedback
 
-### Possibili Aggiunte
-- Neural Network integration per ML
-- Genetic Algorithm per evoluzione AI
-- Swarm Intelligence patterns
-- Procedural behavior generation
-- Voice command integration
-- VR/AR debug visualization
-- Cloud-based AI training
-- Cross-server AI synchronization
-
-### Community Requests
-- [ ] Placeholder per richieste community
-- [ ] Voting system per priorità features
+- **GitHub Issues**: [Report bugs & request features](https://github.com/Gerefloc45/VoidAPI/issues)
+- **Discord**: Join our community (link TBA)
+- **Email**: gerefloc45@example.com
 
 ---
 
-## 📝 Note di Implementazione
-
-### Principi Guida
-1. **Keep it Simple** - API deve rimanere semplice
-2. **Performance First** - Ottimizza sempre
-3. **Modular Design** - Ogni feature è opzionale
-4. **Backward Compatible** - Non rompere API esistenti
-5. **Well Documented** - Javadoc + esempi sempre
-
-### Breaking Changes Policy
-- Major version (2.0, 3.0): Breaking changes permessi
-- Minor version (1.1, 1.2): Solo additive changes
-- Patch version (1.0.1): Solo bugfix
-
----
-
-## 🤝 Contributi
-
-Questo è un progetto in evoluzione. Idee e suggerimenti sono benvenuti!
-
----
-
-## 📊 Progress Tracker
-
-### Completamento Features per Versione
-
-#### v0.1.0-beta ✅ 100% COMPLETATO
-- ✅ Core Framework (7/7)
-- ✅ Nodi Base (3/3)
-- ✅ Nodi Avanzati (5/5)
-- ✅ Sistema Percezione (6/6) - Tutti i sensori implementati
-- ✅ Documentazione Completa
-
-#### v0.2.0 (Utility AI) ✅ 100% COMPLETATO
-- ✅ Scorer Interface (5/5)
-- ✅ Consideration & ResponseCurve (13+ curves)
-- ✅ UtilitySelector (1/1)
-- ✅ DynamicPrioritySelector (1/1)
-- ✅ Esempi e Documentazione (3 esempi completi)
-
-#### v0.3.0 (GOAP) - 0%
-- ⏳ In pianificazione
-
-#### v0.4.0 (Debug Tools) - 0%
-- ⏳ In pianificazione
-
-### Overall Progress to v1.0.0 Stable
-```
-████████████████░░░░░░░░░░░░ 50% Complete
-
-Phase 1: ████████████████████ 100% ✅ (Nodi + Sensori)
-Phase 2: ████████████████████ 100% ✅ (Utility AI)
-Phase 3: ░░░░░░░░░░░░░░░░░░░░   0% ⏳ (GOAP)
-Phase 4: ░░░░░░░░░░░░░░░░░░░░   0% ⏳ (Debug Tools)
-Phase 5: ░░░░░░░░░░░░░░░░░░░░   0% ⏳ (Pathfinding)
-```
-
----
-
-**Ultima Modifica**: 2025-11-09 (Completamento Phase 2)  
-**Versione Corrente**: v0.2.0-beta (COMPLETA)  
-**Prossima Release**: v0.3.0 (GOAP System)
+**Last Updated:** November 2025  
+**Maintainer:** Gerefloc45  
+**License:** MIT

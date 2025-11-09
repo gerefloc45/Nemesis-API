@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
-  "id": "nemesisapi",
+  "id": "voidapi",
   "version": "${version}",
-  "name": "Nemesis-API",
+  "name": "VoidAPI",
   "description": "A modular AI framework for Minecraft entities. Provides behavior trees, blackboard memory, sensors, and async utilities. [BETA]",
   "authors": [
     "Gerefloc45"
   ],
   "contact": {
-    "homepage": "https://github.com/Gerefloc45/Nemesis-API",
-    "sources": "https://github.com/Gerefloc45/Nemesis-API"
+    "homepage": "https://github.com/Gerefloc45/VoidAPI",
+    "sources": "https://github.com/Gerefloc45/VoidAPI"
   },
   "license": "MIT",
-  "icon": "assets/nemesisapi/icon.png",
+  "icon": "assets/voidapi/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.gerefloc45.nemesisapi.NemesisAPIMod"
+      "com.gerefloc45.voidapi.VoidAPIMod"
     ]
   },
   "depends": {
