@@ -71,9 +71,9 @@ nbdist/
 # ============================================
 # Internal/draft documentation files
 README-AI-CORE.md
-wiki/
-# Description.md is tracked for publication
-Description.md
+CLIENT-SERVER-ARCHITECTURE.md
+AI-ROADMAP.md
+RELEASE-NOTES-V0.2.0.MD
 
 # ============================================
 # MINECRAFT RUN DIRECTORIES (CRITICAL)
