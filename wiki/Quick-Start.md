@@ -4,7 +4,7 @@ Build your first AI in 5 minutes! This guide will walk you through creating a si
 
 ## Prerequisites
 
--  switch (- Nemesis-API installed (see [Installation](Installation)).Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { - Nemesis-API installed (see [Installation](Installation)).Value } }  installed (see [Installation](Installation))
+- VoidAPI installed (see [Installation](Installation))
 - Basic Java knowledge
 - Familiarity with Minecraft modding
 
@@ -13,9 +13,9 @@ Build your first AI in 5 minutes! This guide will walk you through creating a si
 Let's create a patrol behavior:
 
 ```java
-import com.gerefloc45. switch (import com.gerefloc45.nemesisapi.api.Behavior;.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { import com.gerefloc45.nemesisapi.api.Behavior;.Value } } .api.Behavior;
-import com.gerefloc45. switch (import com.gerefloc45.nemesisapi.api.BehaviorContext;.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { import com.gerefloc45.nemesisapi.api.BehaviorContext;.Value } } .api.BehaviorContext;
-import com.gerefloc45. switch (import com.gerefloc45.nemesisapi.api.nodes.ActionNode;.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { import com.gerefloc45.nemesisapi.api.nodes.ActionNode;.Value } } .api.nodes.ActionNode;
+import com.gerefloc45.voidapi.api.Behavior;
+import com.gerefloc45.voidapi.api.BehaviorContext;
+import com.gerefloc45.voidapi.api.nodes.ActionNode;
 
 public class PatrolBehavior extends ActionNode {
     private int tickCount = 0;
@@ -109,8 +109,8 @@ public class FindEnemyBehavior extends ActionNode {
 Now combine everything into a tree:
 
 ```java
-import com.gerefloc45. switch (import com.gerefloc45.nemesisapi.api.BehaviorTree;.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { import com.gerefloc45.nemesisapi.api.BehaviorTree;.Value } } .api.BehaviorTree;
-import com.gerefloc45. switch (import com.gerefloc45.nemesisapi.api.nodes.*;.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { import com.gerefloc45.nemesisapi.api.nodes.*;.Value } } .api.nodes.*;
+import com.gerefloc45.voidapi.api.BehaviorTree;
+import com.gerefloc45.voidapi.api.nodes.*;
 
 public class GuardAI {
     public static BehaviorTree create() {
@@ -140,8 +140,8 @@ public class GuardAI {
 In your mod initialization or entity spawn event:
 
 ```java
-import com.gerefloc45. switch (import com.gerefloc45.nemesisapi.core.BrainController;.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { import com.gerefloc45.nemesisapi.core.BrainController;.Value } } .core.BrainController;
-import com.gerefloc45. switch (import com.gerefloc45.nemesisapi.core.BrainTicker;.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { import com.gerefloc45.nemesisapi.core.BrainTicker;.Value } } .core.BrainTicker;
+import com.gerefloc45.voidapi.core.BrainController;
+import com.gerefloc45.voidapi.core.BrainTicker;
 import net.minecraft.entity.mob.HostileEntity;
 
 public void attachGuardAI(HostileEntity entity) {
@@ -170,11 +170,11 @@ Here's the full code in one place:
 ```java
 package com.yourmod.ai;
 
-import com.gerefloc45. switch (import com.gerefloc45.nemesisapi.api.*;.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { import com.gerefloc45.nemesisapi.api.*;.Value } } .api.*;
-import com.gerefloc45. switch (import com.gerefloc45.nemesisapi.api.nodes.*;.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { import com.gerefloc45.nemesisapi.api.nodes.*;.Value } } .api.nodes.*;
-import com.gerefloc45. switch (import com.gerefloc45.nemesisapi.api.perception.EntitySensor;.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { import com.gerefloc45.nemesisapi.api.perception.EntitySensor;.Value } } .api.perception.EntitySensor;
-import com.gerefloc45. switch (import com.gerefloc45.nemesisapi.core.BrainController;.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { import com.gerefloc45.nemesisapi.core.BrainController;.Value } } .core.BrainController;
-import com.gerefloc45. switch (import com.gerefloc45.nemesisapi.core.BrainTicker;.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { import com.gerefloc45.nemesisapi.core.BrainTicker;.Value } } .core.BrainTicker;
+import com.gerefloc45.voidapi.api.*;
+import com.gerefloc45.voidapi.api.nodes.*;
+import com.gerefloc45.voidapi.api.perception.EntitySensor;
+import com.gerefloc45.voidapi.core.BrainController;
+import com.gerefloc45.voidapi.core.BrainTicker;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.player.PlayerEntity;

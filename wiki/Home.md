@@ -1,11 +1,11 @@
-#  switch (# Nemesis-API Wiki.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { # Nemesis-API Wiki.Value } }  Wiki
+# VoidAPI Wiki
 
-Welcome to the ** switch (Welcome to the **Nemesis-API** documentation! This is a powerful, modular AI framework for Minecraft Fabric 1.21.1..Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { Welcome to the **Nemesis-API** documentation! This is a powerful, modular AI framework for Minecraft Fabric 1.21.1..Value } } ** documentation! This is a powerful, modular AI framework for Minecraft Fabric 1.21.1.
+Welcome to the **VoidAPI** documentation! This is a powerful, modular AI framework for Minecraft Fabric 1.21.1.
 
 ## 🚀 Quick Navigation
 
 ### Getting Started
-- **[Installation](Installation)** - How to add  switch (- **[Installation](Installation)** - How to add Nemesis-API to your mod.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { - **[Installation](Installation)** - How to add Nemesis-API to your mod.Value } }  to your mod
+- **[Installation](Installation)** - How to add VoidAPI to your mod
 - **[Quick Start Guide](Quick-Start)** - Build your first AI in 5 minutes
 - **[Project Setup](Project-Setup)** - Setting up your development environment
 
@@ -83,9 +83,9 @@ Welcome to the ** switch (Welcome to the **Nemesis-API** documentation! This is 
 
 ---
 
-## 🎯 What is  switch (## 🎯 What is Nemesis-API?.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { ## 🎯 What is Nemesis-API?.Value } } ?
+## 🎯 What is VoidAPI?
 
- switch (Nemesis-API is a **pure library mod** that provides advanced AI capabilities for Minecraft entities. It contains:.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { Nemesis-API is a **pure library mod** that provides advanced AI capabilities for Minecraft entities. It contains:.Value } }  is a **pure library mod** that provides advanced AI capabilities for Minecraft entities. It contains:
+VoidAPI is a **pure library mod** that provides advanced AI capabilities for Minecraft entities. It contains:
 
 - **No entities, items, or blocks** - Pure API only
 - **Behavior Tree system** - Industry-standard AI architecture
@@ -102,7 +102,7 @@ Welcome to the ** switch (Welcome to the **Nemesis-API** documentation! This is 
 
 ---
 
-## 💡 Why Use  switch (## 💡 Why Use Nemesis-API?.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { ## 💡 Why Use Nemesis-API?.Value } } ?
+## 💡 Why Use VoidAPI?
 
 ### Traditional Minecraft AI
 ```java
@@ -111,7 +111,7 @@ goalSelector.add(1, new MeleeAttackGoal(mob, 1.0, false));
 goalSelector.add(2, new WanderAroundGoal(mob, 1.0));
 ```
 
-###  switch (### Nemesis-API.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { ### Nemesis-API.Value } } 
+### VoidAPI
 ```java
 // Flexible, composable, powerful
 BehaviorTree brain = new BehaviorTree(
@@ -137,7 +137,7 @@ BrainController.getInstance().attachBrain(entity, brain);
 
 ## 🚀 Get Started Now!
 
-1. **[Install  switch (1. **[Install Nemesis-API](Installation)** in your mod.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { 1. **[Install Nemesis-API](Installation)** in your mod.Value } } ](Installation)** in your mod
+1. **[Install VoidAPI](Installation)** in your mod
 2. **[Follow the Quick Start](Quick-Start)** guide
 3. **[Check out Examples](Basic-Examples)** for inspiration
 4. **[Join the Community](Contributing)** and share your creations!
@@ -146,7 +146,7 @@ BrainController.getInstance().attachBrain(entity, brain);
 
 ## 📝 License
 
- switch (Nemesis-API is released under the [MIT License](https://github.com/yourusername/Nemesis-API/blob/main/LICENSE)..Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { Nemesis-API is released under the [MIT License](https://github.com/yourusername/Nemesis-API/blob/main/LICENSE)..Value } }  is released under the [MIT License](https://github.com/yourusername/ switch (Nemesis-API is released under the [MIT License](https://github.com/yourusername/Nemesis-API/blob/main/LICENSE)..Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { Nemesis-API is released under the [MIT License](https://github.com/yourusername/Nemesis-API/blob/main/LICENSE)..Value } } /blob/main/LICENSE).
+VoidAPI is released under the [MIT License](https://github.com/yourusername/VoidAPI/blob/main/LICENSE).
 
 ---
 

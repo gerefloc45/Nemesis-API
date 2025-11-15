@@ -1,6 +1,6 @@
 # Behavior Trees
 
-Behavior Trees are the foundation of  switch (Behavior Trees are the foundation of Nemesis-API. This page explains what they are and how to use them effectively..Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { Behavior Trees are the foundation of Nemesis-API. This page explains what they are and how to use them effectively..Value } } . This page explains what they are and how to use them effectively.
+Behavior Trees are the foundation of VoidAPI. This page explains what they are and how to use them effectively.
 
 ## What is a Behavior Tree?
 

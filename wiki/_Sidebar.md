@@ -1,4 +1,4 @@
-#  switch (# Nemesis-API Wiki.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { # Nemesis-API Wiki.Value } }  Wiki
+# VoidAPI Wiki
 
 ## 🚀 Getting Started
 - [Home](Home)

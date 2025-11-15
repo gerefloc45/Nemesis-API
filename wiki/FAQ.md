@@ -2,30 +2,30 @@
 
 ## General
 
-### What is  switch (### What is Nemesis-API?.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { ### What is Nemesis-API?.Value } } ?
+### What is VoidAPI?
 
- switch (Nemesis-API is a pure library mod for Minecraft Fabric 1.21.1 that provides advanced AI capabilities through Behavior Trees, Sensors, and Utility AI systems. It contains no gameplay content - just the API..Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { Nemesis-API is a pure library mod for Minecraft Fabric 1.21.1 that provides advanced AI capabilities through Behavior Trees, Sensors, and Utility AI systems. It contains no gameplay content - just the API..Value } }  is a pure library mod for Minecraft Fabric 1.21.1 that provides advanced AI capabilities through Behavior Trees, Sensors, and Utility AI systems. It contains no gameplay content - just the API.
+VoidAPI is a pure library mod for Minecraft Fabric 1.21.1 that provides advanced AI capabilities through Behavior Trees, Sensors, and Utility AI systems. It contains no gameplay content - just the API.
 
 ### Is it compatible with my mod?
 
-Yes!  switch (Yes! Nemesis-API is designed to work alongside any mod. Just add it as a dependency and use it for your entities' AI..Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { Yes! Nemesis-API is designed to work alongside any mod. Just add it as a dependency and use it for your entities' AI..Value } }  is designed to work alongside any mod. Just add it as a dependency and use it for your entities' AI.
+Yes! VoidAPI is designed to work alongside any mod. Just add it as a dependency and use it for your entities' AI.
 
 ### Can I use it for vanilla mobs?
 
-Yes! You can attach  switch (Yes! You can attach Nemesis-API brains to any `LivingEntity`, including vanilla mobs..Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { Yes! You can attach Nemesis-API brains to any `LivingEntity`, including vanilla mobs..Value } }  brains to any `LivingEntity`, including vanilla mobs.
+Yes! You can attach VoidAPI brains to any `LivingEntity`, including vanilla mobs.
 
 ### Does it work on servers?
 
-Yes,  switch (Yes, Nemesis-API is server-side only. No client installation needed..Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { Yes, Nemesis-API is server-side only. No client installation needed..Value } }  is server-side only. No client installation needed.
+Yes, VoidAPI is server-side only. No client installation needed.
 
 ## Installation & Setup
 
-### How do I add  switch (### How do I add Nemesis-API to my mod?.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { ### How do I add Nemesis-API to my mod?.Value } }  to my mod?
+### How do I add VoidAPI to my mod?
 
 See the [Installation](Installation) guide. TL;DR:
 ```gradle
-modImplementation "com.gerefloc45: switch (modImplementation "com.gerefloc45:nemesis-api:0.2.0-beta".Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { modImplementation "com.gerefloc45:nemesis-api:0.2.0-beta".Value } } :0.2.0-beta"
-include "com.gerefloc45: switch (include "com.gerefloc45:nemesis-api:0.2.0-beta".Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { include "com.gerefloc45:nemesis-api:0.2.0-beta".Value } } :0.2.0-beta"
+modImplementation "com.gerefloc45:voidapi:0.3.0"
+include "com.gerefloc45:voidapi:0.3.0"
 ```
 
 ### Do I need to bundle it with my mod?
@@ -80,7 +80,7 @@ Vec3d pos = ctx.getBlackboard().<Vec3d>get("target_position").orElse(null);
 
 ## Performance
 
-### How many entities can use  switch (### How many entities can use Nemesis-API?.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { ### How many entities can use Nemesis-API?.Value } } ?
+### How many entities can use VoidAPI?
 
 Tested with 100+ entities. Performance depends on tree complexity and tick frequency.
 
@@ -242,7 +242,7 @@ public void printTree(BehaviorNode node, int depth) {
 
 ## Common Issues
 
-### "Cannot resolve symbol ' switch (### "Cannot resolve symbol 'nemesisapi'".Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { ### "Cannot resolve symbol 'nemesisapi'".Value } } '"
+### "Cannot resolve symbol 'voidapi'"
 
 - Refresh Gradle: `./gradlew build --refresh-dependencies`
 - Check dependency is correct in `build.gradle`
@@ -307,7 +307,7 @@ See [Contributing](Contributing) guide. We welcome:
 
 Open an issue on GitHub with:
 - Minecraft version
--  switch (- Nemesis-API version.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { - Nemesis-API version.Value } }  version
+- VoidAPI version
 - Steps to reproduce
 - Error logs
 

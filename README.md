@@ -1,6 +1,6 @@
-#  switch (# Nemesis-API Wiki.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { # Nemesis-API Wiki.Value } }  Wiki
+# VoidAPI Wiki
 
-This folder contains the complete documentation for  switch (This folder contains the complete documentation for Nemesis-API..Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { This folder contains the complete documentation for Nemesis-API..Value } } .
+This folder contains the complete documentation for VoidAPI.
 
 ## 📚 How to Use This Wiki
 
@@ -67,7 +67,7 @@ Just browse the `.md` files in this folder with any Markdown viewer!
 
 ## 🚀 Quick Links
 
-**New to  switch (**New to Nemesis-API?**.Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { **New to Nemesis-API?**.Value } } ?**
+**New to VoidAPI?**
 1. Read `Home.md`
 2. Follow `Installation.md`
 3. Try `Quick-Start.md`
@@ -93,9 +93,9 @@ To add or update wiki pages:
 
 ## 🔗 External Links
 
-- [GitHub Repository](https://github.com/yourusername/ switch (- [GitHub Repository](https://github.com/yourusername/Nemesis-API).Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { - [GitHub Repository](https://github.com/yourusername/Nemesis-API).Value } } )
-- [Issue Tracker](https://github.com/yourusername/ switch (- [Issue Tracker](https://github.com/yourusername/Nemesis-API/issues).Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { - [Issue Tracker](https://github.com/yourusername/Nemesis-API/issues).Value } } /issues)
-- [Releases](https://github.com/yourusername/ switch (- [Releases](https://github.com/yourusername/Nemesis-API/releases).Value) { "Nemesis-API" { "VoidAPI" } "Nemesis API" { "VoidAPI" } "nemesisapi" { "voidapi" } default { - [Releases](https://github.com/yourusername/Nemesis-API/releases).Value } } /releases)
+- [GitHub Repository](https://github.com/yourusername/VoidAPI)
+- [Issue Tracker](https://github.com/yourusername/VoidAPI/issues)
+- [Releases](https://github.com/yourusername/VoidAPI/releases)
 
 ---
 
