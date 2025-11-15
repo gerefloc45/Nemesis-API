@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
  * Provides client-specific features like debug visualization.
  * 
  * @author VoidAPI Framework
- * @version 0.2.2
+ * @version 0.3.0
  */
 public class VoidAPIClient implements ClientModInitializer {
     private static final Logger LOGGER = LoggerFactory.getLogger("VoidAPI-Client");

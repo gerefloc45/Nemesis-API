@@ -3,7 +3,7 @@
   "id": "voidapi",
   "version": "${version}",
   "name": "VoidAPI",
-  "description": "Professional AI framework for Minecraft. Behavior trees, pathfinding, animations, utility AI, perception system, and debugging tools. v0.2.2",
+  "description": "Professional AI framework for Minecraft. Behavior trees, FSM, pathfinding, animations, utility AI, perception system, and debugging tools. v0.3.0",
   "authors": [
     "Gerefloc45"
   ],
