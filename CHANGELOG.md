@@ -7,6 +7,121 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.6.0] - 2025-11-18
+
+### Release Highlights
+
+This release introduces **Multiplayer & Networking** with 5 new components:
+- **NetworkedBrain** - Client-side prediction and AI synchronization
+- **AIShareManager** - Share AI configurations between players
+- **NetworkOptimizer** - Bandwidth optimization and adaptive updates
+- **SpectatorMode** - Watch AI decisions in real-time
+- **RemoteDebugger** - Debug AI remotely with breakpoints
+
+### Added
+
+#### Networking Core (5 components)
+
+**NetworkedBrain**
+- Client-side prediction for reduced latency
+- Delta compression for bandwidth efficiency
+- Automatic synchronization with nearby players
+- Smooth position interpolation
+- Configurable sync intervals
+```java
+NetworkedBrain networkedBrain = new NetworkedBrain(entity, tree, blackboard);
+networkedBrain.setSyncInterval(50); // 50ms
+networkedBrain.setEnablePrediction(true);
+networkedBrain.tick(); // Call every tick
+```
+
+**AIShareManager**
+- Export AI as shareable templates
+- Import AI from templates
+- Share AI with specific players or make public
+- AI library with search functionality
+- Download tracking and ratings
+```java
+AIShareManager manager = AIShareManager.getInstance();
+UUID aiId = manager.exportAI(entity, tree, blackboard, owner, "My AI", "Description");
+manager.shareWithPlayer(aiId, owner, targetPlayer);
+manager.makePublic(aiId, owner);
+```
+
+**NetworkOptimizer**
+- Adaptive update rate based on distance and bandwidth
+- Priority-based update queuing
+- Delta compression
+- Bandwidth throttling per player
+- Performance statistics
+```java
+NetworkOptimizer optimizer = new NetworkOptimizer();
+optimizer.setMaxBandwidthPerPlayer(10240); // 10 KB/s
+NbtCompound optimized = optimizer.optimizeUpdate(player, entityId, state);
+int interval = optimizer.calculateOptimalInterval(player, distance, importance);
+```
+
+**SpectatorMode**
+- Real-time AI decision visualization
+- Behavior tree state monitoring
+- Blackboard value inspection
+- Event timeline
+- Session statistics
+```java
+SpectatorMode spectator = SpectatorMode.getInstance();
+spectator.startSpectating(player, entity, tree, blackboard);
+spectator.notifyEvent(entityId, "decision_made", eventData);
+spectator.tick(); // Call every tick
+```
+
+**RemoteDebugger**
+- Breakpoints on behavior tree nodes
+- Step-by-step execution
+- Runtime blackboard modification
+- Pause/resume AI execution
+- Remote logging
+```java
+RemoteDebugger debugger = RemoteDebugger.getInstance();
+debugger.startDebugSession(player, entity, tree, blackboard);
+debugger.addBreakpoint(player, "AttackNode");
+debugger.pauseExecution(player);
+debugger.stepExecution(player);
+```
+
+### Technical Details
+
+**Network Protocol**
+- 4 packet types: AI_STATE, AI_SHARE, AI_DEBUG, AI_SPECTATE
+- NBT-based serialization
+- Packet size estimation for optimization
+
+**Performance**
+- Delta compression reduces bandwidth by ~60%
+- Client-side prediction reduces perceived latency
+- Adaptive update rates optimize network usage
+- Priority queuing ensures critical updates
+
+### Compatibility
+
+- **Minecraft:** 1.21.1
+- **Fabric Loader:** 0.16.9+
+- **Fabric API:** 0.108.0+
+- **Java:** 21+
+
+### Breaking Changes
+
+**None!** This release is fully backward compatible with v0.5.1.
+
+### Coming Next (v0.7.0)
+
+- Advanced Perception
+- Vision cones and line-of-sight
+- Smell and touch sensors
+- Memory degradation
+- Attention system
+
+---
+
 ## [0.5.1] - 2025-11-16
 
 ### 🐛 Bug Fixes

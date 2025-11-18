@@ -10,6 +10,7 @@
 - [Finite State Machines](FSM-Guide)
 - [GOAP](GOAP-Guide)
 - [Machine Learning](ML-Guide)
+- [Networking](Networking-Guide)
 - [Blackboard](Blackboard)
 - [Brain Controller](Brain-Controller)
 
@@ -36,6 +37,12 @@
 - [Pattern Recognition](Pattern-Recognition)
 - [Adaptive Difficulty](Adaptive-Difficulty)
 
+## 🌐 Networking
+- [Networking Guide](Networking-Guide)
+- [NetworkedBrain](Networked-Brain)
+- [AI Sharing](AI-Sharing)
+- [Spectator Mode](Spectator-Mode)
+
 ## 📖 Examples
 - [Basic Examples](Basic-Examples)
 - [Combat AI](Combat-AI-Tutorial)
@@ -48,4 +55,4 @@
 
 ---
 
-**v0.5.1**
+**v0.6.0**

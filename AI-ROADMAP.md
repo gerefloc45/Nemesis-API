@@ -1,6 +1,6 @@
 # VoidAPI Development Roadmap
 
-## Current Version: v0.5.0
+## Current Version: v0.6.0
 
 **Status:** Active Development  
 **Target:** Minecraft 1.21.1 Fabric
@@ -170,17 +170,48 @@
 
 ---
 
+## ✅ Completed (v0.6.0)
+
+### Multiplayer & Networking
+
+#### Network Synchronization
+- ✅ **NetworkedBrain** - Client-side prediction and AI sync
+- ✅ **Delta compression** - Bandwidth-efficient updates
+- ✅ **Smooth interpolation** - Seamless position updates
+- ✅ **Configurable sync** - Adaptive update intervals
+- ✅ **Prediction validation** - Client-server reconciliation
+
+#### AI Sharing
+- ✅ **AIShareManager** - Share AI configurations
+- ✅ **Template system** - Export/import AI
+- ✅ **Permission control** - Private/public sharing
+- ✅ **AI library** - Search and discovery
+- ✅ **Rating system** - Community feedback
+
+#### Network Optimization
+- ✅ **NetworkOptimizer** - Bandwidth management
+- ✅ **Adaptive updates** - Distance-based rates
+- ✅ **Priority queuing** - Critical update handling
+- ✅ **Bandwidth throttling** - Per-player limits
+- ✅ **Performance stats** - Usage monitoring
+
+#### Spectator Mode
+- ✅ **SpectatorMode** - Real-time AI observation
+- ✅ **Decision visualization** - Live behavior tree state
+- ✅ **Event timeline** - Action history
+- ✅ **Blackboard inspection** - Memory viewing
+- ✅ **Session statistics** - Performance metrics
+
+#### Remote Debugging
+- ✅ **RemoteDebugger** - Network-based debugging
+- ✅ **Breakpoints** - Pause on specific nodes
+- ✅ **Step execution** - Single-step through AI
+- ✅ **Runtime modification** - Change values live
+- ✅ **Pause/resume** - Control AI execution
+
+---
+
 ## 📋 Planned Features
-
-### v0.6.0 - Multiplayer & Networking
-**ETA:** Q3 2026
-**Priority:** ⭐ Medium
-
-- **Synchronized AI** - Client-side prediction
-- **AI sharing** - Share AI between players
-- **Network optimization** - Reduce bandwidth usage
-- **Spectator mode** - Watch AI decisions live
-- **Remote debugging** - Debug AI over network
 
 ### v0.7.0 - Advanced Perception
 **ETA:** Q4 2026
@@ -277,7 +308,7 @@
 | v0.3.0 | 2025-11-15 | Finite State Machines, hierarchical FSM, state persistence |
 | v0.4.0 | 2025-11-15 | Goal-Oriented Action Planning (GOAP) with A* planner |
 | v0.5.0 | 2025-11-16 | Machine Learning Integration (learning, patterns, adaptive difficulty) |
-| v0.6.0 | Q1 2026 | Multiplayer & networking |
+| v0.6.0 | 2025-11-18 | Multiplayer & Networking (sync, sharing, optimization, spectator, debug) |
 | v0.7.0 | Q2 2026 | Advanced perception |
 | v0.8.0 | Q3 2026 | Social AI |
 | v1.0.0 | Q4 2026 | Stable release |
@@ -323,6 +354,6 @@ Durante la **beta** (v0.x.x), le API possono cambiare tra versioni minor.
 
 ---
 
-**Last Updated:** November 15, 2025  
+**Last Updated:** November 18, 2025  
 **Maintainer:** Gerefloc45  
 **License:** MIT

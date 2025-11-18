@@ -35,8 +35,8 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:0.106.0+1.21.1"
     
     // Add VoidAPI
-    modImplementation "com.gerefloc45:voidapi:0.5.1"
-    include "com.gerefloc45:voidapi:0.5.1" // Bundle it with your mod
+    modImplementation "com.gerefloc45:voidapi:0.6.0"
+    include "com.gerefloc45:voidapi:0.6.0" // Bundle it with your mod
 }
 ```
 
@@ -62,8 +62,8 @@ cd path/to/VoidAPI
 2. Add local JAR to your mod:
 ```gradle
 dependencies {
-    modImplementation files("path/to/VoidAPI/build/libs/voidapi-0.5.1.jar")
-    include files("path/to/VoidAPI/build/libs/voidapi-0.5.1.jar")
+    modImplementation files("path/to/VoidAPI/build/libs/voidapi-0.6.0.jar")
+    include files("path/to/VoidAPI/build/libs/voidapi-0.6.0.jar")
 }
 ```
 
@@ -83,8 +83,8 @@ includeBuild('../VoidAPI') {
 2. Add dependency normally:
 ```gradle
 dependencies {
-    modImplementation "com.gerefloc45:voidapi:0.5.1"
-    include "com.gerefloc45:voidapi:0.5.1"
+    modImplementation "com.gerefloc45:voidapi:0.6.0"
+    include "com.gerefloc45:voidapi:0.6.0"
 }
 ```
 
@@ -132,7 +132,7 @@ Make sure to declare VoidAPI as a dependency in your `fabric.mod.json`:
     "fabric-api": "*",
     "minecraft": "1.21.1",
     "java": ">=21",
-    "voidapi": ">=0.5.1"
+    "voidapi": ">=0.6.0"
   }
 }
 ```

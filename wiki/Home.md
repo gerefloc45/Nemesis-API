@@ -14,6 +14,7 @@ Welcome to the **VoidAPI** documentation! This is a powerful, modular AI framewo
 - **[Finite State Machines](FSM-Guide)** - State-based AI architecture
 - **[Goal-Oriented Action Planning](GOAP-Guide)** - Dynamic planning system
 - **[Machine Learning](ML-Guide)** - Adaptive AI with learning
+- **[Multiplayer & Networking](Networking-Guide)** - AI synchronization and sharing
 - **[Blackboard System](Blackboard)** - Shared memory for AI
 - **[Brain Controller](Brain-Controller)** - Managing entity AI
 - **[Behavior Context](Behavior-Context)** - Execution context
@@ -43,6 +44,14 @@ Welcome to the **VoidAPI** documentation! This is a powerful, modular AI framewo
 - **[Adaptive Difficulty](Adaptive-Difficulty)** - Dynamic challenge adjustment
 - **[Training Mode](Training-Mode)** - Supervised learning
 
+### Multiplayer & Networking
+- **[Networking Overview](Networking-Guide)** - AI synchronization fundamentals
+- **[NetworkedBrain](Networked-Brain)** - Client-side prediction
+- **[AI Sharing](AI-Sharing)** - Share AI configurations
+- **[Network Optimization](Network-Optimization)** - Bandwidth management
+- **[Spectator Mode](Spectator-Mode)** - Watch AI live
+- **[Remote Debugging](Remote-Debugging)** - Debug AI remotely
+
 ### Examples & Tutorials
 - **[Basic Examples](Basic-Examples)** - Simple AI patterns
 - **[Combat AI Tutorial](Combat-AI-Tutorial)** - Smart fighting behavior
@@ -71,7 +80,7 @@ Welcome to the **VoidAPI** documentation! This is a powerful, modular AI framewo
 
 ## 📊 Current Version
 
-**v0.5.1** - Machine Learning Integration Complete
+**v0.6.0** - Multiplayer & Networking Complete
 
 ### What's Included
 - ✅ Complete Behavior Tree system
@@ -79,17 +88,19 @@ Welcome to the **VoidAPI** documentation! This is a powerful, modular AI framewo
 - ✅ 9 FSM components (core + hierarchical + persistence)
 - ✅ 8 GOAP components (planning + execution + integration)
 - ✅ 5 Machine Learning components (learning + patterns + difficulty)
+- ✅ 5 Networking components (sync + sharing + optimization + spectator + debug)
 - ✅ 4 perception sensors
 - ✅ Full Utility AI system
 - ✅ 13+ response curves
 - ✅ Comprehensive examples
 
 ### Quick Stats
-- 📦 63 Java classes
+- 📦 68 Java classes
 - 🎯 11 behavior tree nodes
 - 🔄 9 FSM components
 - 🎯 8 GOAP components
 - 🧠 5 ML components
+- 🌐 5 Networking components
 - 👁️ 6 perception classes
 - 🧮 13+ response curves
 - 📚 Complete documentation
