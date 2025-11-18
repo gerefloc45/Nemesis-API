@@ -175,6 +175,3 @@ See the `LICENSE` file in this repository (if present) or the license entry in t
 
 - 💻 **Repository:** <https://github.com/gerefloc45/VoidAPI>
 - 📘 **Main Wiki:** <https://github.com/gerefloc45/VoidAPI/wiki>
-- 📝 **Changelog:** <https://github.com/gerefloc45/VoidAPI/wiki/Changelog>
-
-Feel free to adapt this README to your needs (add badges, screenshots, examples) – the important part is that it always points users to the Wiki as the canonical documentation.
