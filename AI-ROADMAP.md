@@ -1,6 +1,6 @@
 # VoidAPI Development Roadmap
 
-## Current Version: v0.6.0
+## Current Version: v0.7.0
 
 **Status:** Active Development  
 **Target:** Minecraft 1.21.1 Fabric
@@ -211,18 +211,19 @@
 
 ---
 
+## ✅ Completed (v0.7.0)
+
+### Advanced Perception
+- ✅ **Vision cones** - Realistic field of view with peripheral vision
+- ✅ **Line-of-sight** - Raycasting-based occlusion detection
+- ✅ **Smell sensor** - Scent trail tracking with time and distance decay
+- ✅ **Touch sensor** - Physical contact detection with force calculation
+- ✅ **Memory degradation** - Importance-based retention with decay curves
+- ✅ **Attention system** - Multi-factor stimulus prioritization with focus management
+
+---
+
 ## 📋 Planned Features
-
-### v0.7.0 - Advanced Perception
-**ETA:** Q4 2026
-**Priority:** ⭐ Medium
-
-- **Vision cones** - Realistic field of view
-- **Line-of-sight** - Occlusion detection
-- **Smell sensor** - Track by scent
-- **Touch sensor** - React to physical contact
-- **Memory degradation** - Forget over time
-- **Attention system** - Focus on important stimuli
 
 ### v0.8.0 - Social AI
 **ETA:** Q1 2027
@@ -309,7 +310,7 @@
 | v0.4.0 | 2025-11-15 | Goal-Oriented Action Planning (GOAP) with A* planner |
 | v0.5.0 | 2025-11-16 | Machine Learning Integration (learning, patterns, adaptive difficulty) |
 | v0.6.0 | 2025-11-18 | Multiplayer & Networking (sync, sharing, optimization, spectator, debug) |
-| v0.7.0 | Q2 2026 | Advanced perception |
+| v0.7.0 | 2025-11-22 | Advanced Perception (vision cones, LOS, smell, touch, memory, attention) |
 | v0.8.0 | Q3 2026 | Social AI |
 | v1.0.0 | Q4 2026 | Stable release |
 
